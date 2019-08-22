@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title *ngIf="!id">Adicionar cliente</ion-title>
+    <ion-title *ngIf="id>=1">Actualizar {{name_customer}}</ion-title>
+    <ion-buttons slot="primary">
+      <ion-back-button text="Voltar" icon="" 
+      color="tertiary" fill="outline"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input type="text" [(ngModel)]="name_customer"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Endereço</ion-label>
+    <ion-input type="text" [(ngModel)]="address"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Correio Electrónico</ion-label>
+    <ion-input type="text" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Telefone</ion-label>
+    <ion-input type="text" [(ngModel)]="phone"></ion-input>
+  </ion-item>
+
+  <ion-item>
+  <ion-label position="floating">Gênero</ion-label>
+  <ion-select [(ngModel)]="gender" placeholder="Selecionar gênero">
+    <ion-select-option value="F">F</ion-select-option>
+    <ion-select-option value="M">M</ion-select-option>
+  </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Descrição</ion-label>
+    <ion-textarea [(ngModel)]="desc_customer"></ion-textarea>
+  </ion-item>
+
+  <ion-button expand="block" padding color="tertiary" *ngIf="!id" 
+  (click)="createProses()">Guardar</ion-button>
+
+  <ion-button expand="block" padding color="tertiary" *ngIf="id>=1" 
+    (click)="updateProses()">Actualizar dados</ion-button>
+
+</ion-content>

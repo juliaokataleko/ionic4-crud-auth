@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Abrir Conta</ion-title>
+    <ion-buttons slot="primary">
+      <ion-back-button text="Voltar" icon="" 
+      color="tertiary" fill="outline"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-item>
+          <ion-label position="floating">Nome de usuário</ion-label>
+          <ion-input type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Correio electrónico</ion-label>
+            <ion-input type="text" [(ngModel)]="email"></ion-input>
+          </ion-item>
+        <ion-item>
+          <ion-label position="floating">Chave de acesso</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Confirmar chave de acesso</ion-label>
+          <ion-input type="password" [(ngModel)]="confirm_password"></ion-input>
+        </ion-item>
+      </ion-list>
+    
+      <div>
+        <ion-button expland="block" padding color="tertiary"  
+        (click)="registerUser()">Regista-te agora</ion-button>
+        <ion-button expland="block" padding color="tertiary" fill="outline" (click)="formLogin()">Iniciar sessão</ion-button>
+      </div>
+
+</ion-content>

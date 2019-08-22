@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cliente: {{name_customer}}</ion-title>
+    <ion-buttons slot="primary">
+      <ion-back-button text="Voltar" icon="" 
+      color="tertiary" fill="outline"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+      <ion-card-header>
+       <ion-img src="../assets/img/person.jpg"></ion-img>
+        <ion-card-title><b>Nome</b> : {{name_customer}}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <p>Endereço: {{ address }} </p>
+        <p>Email: {{ email }} </p>
+        <p>Telefone: {{ phone }} </p>
+        <p>Gênero: {{ gender }} </p>
+        Mais: {{desc_customer}}
+        </ion-card-content>
+    </ion-card>
+</ion-content>
