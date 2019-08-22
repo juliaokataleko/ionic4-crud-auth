@@ -1,6 +1,6 @@
 # ionic4-mysql-crud-and-auth
-CRUD Completo em Ioinic 4 consumindo uma api em 
-PHP e Mysqli com autenticação de usuários.
+CRUD Completo em Ionic 4 consumindo uma api em 
+PHP e Mysql com autenticação de usuários.
 
 <img src="imgs/login.JPG"/>
 <img src="imgs/home.JPG"/>
@@ -9,7 +9,7 @@ PHP e Mysqli com autenticação de usuários.
 
 * Ter instalado o Node.js
 * Ter instalado o Xampp ou um programa similar
-* Ter instalado o Ionic devidamente configurado.
+* Ter instalado o Ionic e devidamente configurado.
 
 ## Instalação
 
