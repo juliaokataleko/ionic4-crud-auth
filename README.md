@@ -17,7 +17,7 @@ PHP e Mysql com autenticação de usuários.
 * Copie a pasta api para o seu servidor PHP
 * Altere as configurações de conexão no ficheiro DB.php da pasta api/lib
 * No projecto ionic, abra o ficheiro post-providers.ts e altere para o link
-que configurou para a para no servidor php.
+que configurou no servidor php.
 * E... Já está...
 
 
